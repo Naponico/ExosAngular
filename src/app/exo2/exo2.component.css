@@ -1,0 +1,27 @@
+.calculator{
+    display: flex;
+    flex-direction: row;
+    width:50%;
+}
+
+ul{
+    list-style: none;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-list-group-item{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.list-group-item{
+    display:flex;
+    flex-direction: row;
+}

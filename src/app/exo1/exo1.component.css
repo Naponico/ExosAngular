@@ -1,0 +1,30 @@
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tools{
+    display:flex;
+    flex-direction: column;
+    min-width: 50%;
+    max-width: 50%;
+    align-items: center;
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width:50%;
+    min-width: 50%;
+}
+
+.texting{
+    background-color:rgba(163, 160, 160, 0.396);
+    max-width: 50%;
+    border-radius: .375rem .375rem 0em 0em;
+}

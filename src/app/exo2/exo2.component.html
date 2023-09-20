@@ -1,0 +1,32 @@
+<section>
+    <div class="input-group input-group-sm calculator ">
+        <input  class="form-control" type="number" (change)="changeValue($event,1)" placeholder="0" value=0>
+        <select (change)="changeOperator($event)" class="form-control">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" (change)="changeValue($event,2)" placeholder="0" value=0 class="form-control" >
+        <button (click)="eval()" class="btn btn-success btn-sm">Calculer !</button>
+    </div>
+    <div>
+        <p>{{result}}</p>
+    </div>
+
+    <div>
+        <ul class="list-group">
+            <li class="list-group-item"  *ngFor="let save of toSave!" >
+                <div class="vertical-list-group-item">
+                    <div>
+                        {{ save.firstNum}} {{save.operator}} {{save.secondNum}} = {{save.result}}
+                    </div>
+                    <div>
+                        le <span style="font-size:15px;margin-right:10px">{{save.date}}</span>  
+                    </div>
+                </div>
+                <button  class="btn btn-warning btn-sm"(click)="deleteEntry($event)"id={{save.id}}>❌</button>
+            </li>
+        </ul>
+    </div>
+</section>

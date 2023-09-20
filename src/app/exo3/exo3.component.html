@@ -1,0 +1,22 @@
+
+<table mdbTable
+class="table table-striped">
+    <thead class="datatable-header">
+        <tr>
+            <th  scope="col" sortable="date" sorted="false" (click)="sortColumn($event)">Date</th>
+            <th  scole="col" sortable="montant" sorted="false" (click)="sortColumn($event)" >montant</th>
+            <th scope="col" sortable="solde"  sorted="false"(click)="sortColumn($event)" >solde</th>
+            <th scope="col" sortable="label"  sorted="false"(click)="sortColumn($event)" >Libellé</th>
+        </tr>
+    </thead>
+    <tbody class="datatable-body">
+        <tr *ngFor="let transaction of Sortedresult!" scope="row" id="{{transaction.id}}" (click)="openTransDetail($event)">
+            <td>{{transaction.date.toLocaleDateString()}}</td>
+            <td>{{transaction.amount}}</td>
+            <td>{{transaction.balance}}</td>
+            <td>{{transaction.label}}</td>
+        </tr>
+    </tbody>
+    
+</table>
+    

@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --selector-color:rgba(147, 232, 142, 0.826);
+}
+nav ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 0px; 
+    margin-bottom: 0rem;
+}
+nav{
+    width: 100%;
+    background-color: aquamarine;
+    height:fit-content;
+    padding:1em;
+}
+nav ul li{
+    list-style: none;
+}
+
+
+nav a{
+    margin-left:20px;
+    background-color: aquamarine;
+}
+
+
+.tools{
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.transactions{
+    list-style: none;
+    width: max-content;
+}
+
+.transactions li{
+    background-color:rgb(107, 102, 102);
+    padding:1em;
+
+}
+
+
+thead th{
+    cursor:pointer;
+    
+}
+
+thead th:hover{
+    text-decoration: underline 1px black;
+    background-color: rgba(147, 232, 142, 0.826);
+}
+
+
+tbody tr:hover{
+    background-color: rgba(147, 232, 142, 0.826);
+}
+
+th,td{
+    text-align: center!important;
+}
+
+
+.selected{
+    background-color: var(--selector-color);
+}
+
+body{
+    background-color: rgba(229, 220, 220, 0.719);
+    height:100%;
+    min-height:100%;
+}
+
+
+html{
+    height: 100%;
+}

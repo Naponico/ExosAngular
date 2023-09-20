@@ -1,0 +1,37 @@
+<section>
+    <div class="content">
+        <div class="texting">
+            <input type="text" class="form-control" (input)="inputedText(NomInput.value)" #NomInput placeholder="NOM">
+            <p id="textResponse" style="font-family: {{family}};font-size:{{size}}px;text-align:{{side}}">Bonjour {{InputedText}} !</p>
+        </div>
+
+        <div class="tools">
+            <select  class="form-control" #typoSelect (change)="newPolicy($event)">
+                <option value="Arial">
+                    Arial
+                </option>
+                <option value="Calisto MT">
+                    Calisto MT
+                </option>
+                <option value="impact">
+                    Impact
+                </option>
+                <option value="courrier new">
+                    Courrier New
+                </option>
+                <option value='Franklin Gothic Medium'>
+                    Franklin Gothic Medium
+                </option> 
+            </select>
+            <input  class="form-control" type="number" placeholder="20" value="20" #TailleInput (change)="newSize(TailleInput)">
+            <div>
+                <input type="radio" value="left" name="side" checked (click)="newSide($event)">
+                    Gauche
+                <input type="radio" value="center" name="side" (click)="newSide($event)">
+                    Centre
+                <input type="radio" value="right" name="side" (click)="newSide($event)">
+                    Droite
+            </div>
+        </div>
+    </div>
+</section>

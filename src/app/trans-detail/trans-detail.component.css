@@ -1,0 +1,53 @@
+section{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+}
+
+.amountInfo{
+    display:flex;
+    flex-direction: row;
+    border-bottom: solid rgba(121, 121, 121, 0.24) 2px;
+}
+
+.amountInfo span{
+    padding:0.2em;
+}
+
+.amountInfo p{
+    margin-left:1em;
+}
+.infoCard{
+    background-color: rgba(166, 166, 166, 0.718);
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left:20px;
+    top:-150px;
+    position:relative;
+    min-width: 50%;
+    min-height: 35%;
+
+} 
+
+.cardHeader{
+    background-color: rgb(61, 203, 106);
+    border-radius: 15px 15px 0px 0px;
+    padding-right:8em;
+    padding-left:1em;
+}
+
+.textInfo{
+    margin-left:1em;
+}
+
+.dateInfo{
+    margin-left:1em;
+}
+
+button{
+    position:relative;
+    top:-150px;
+    left:10px;
+}

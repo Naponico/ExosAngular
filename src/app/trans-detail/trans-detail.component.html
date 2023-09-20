@@ -1,0 +1,25 @@
+<head>
+    <title>TEST</title>
+</head>
+
+<section>
+    <button (click)="goBack($event)" class="btn btn-sm btn-info">Retour a la synthese</button>
+    <div class="infoCard">
+        <div class="cardHeader">
+            <h3>Transaction {{detail.id}}</h3>
+        </div>
+        <div class="info">
+            <div class="amountInfo">
+                <p> Transaction : <span>{{detail.amount}}</span> </p>
+                <p style="position:relative;right:-300px;"> Solde : <span>{{detail.balance}}</span></p>
+            </div>
+            <div class="textInfo">
+                <p>Libellé : {{detail.label}}</p>
+                <p>Description : {{detail.description}}</p>
+            </div>
+            <div class="dateInfo">
+                <p style="position:relative;right:-400px;">le {{dateOptions[0]}} a {{dateOptions[1]}}</p>
+            </div>
+        </div>
+    </div>
+</section>
